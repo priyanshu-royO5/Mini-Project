@@ -1,0 +1,26 @@
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*  <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 700 
+
+.teko-<uniquifier> {
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.protest-strike-regular {
+  font-family: "Protest Strike", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.protest-revolution-regular {
+  font-family: "Protest Revolution", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  

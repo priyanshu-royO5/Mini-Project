@@ -1,0 +1,109 @@
+/* From Uiverse.io by thisSasha */ 
+button {
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+button:active {
+  transform: scale(80%);
+}
+
+
+/* From Uiverse.io by javierBarroso */ 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  grid-template-rows: repeat(4, 160px);
+  grid-template-areas: "a z" "c b" "d b" "e f" ;
+  gap: 15px;
+}
+
+.red {
+  background-image: url(https://i.pinimg.com/564x/ca/c2/e8/cac2e84e9cf583423f0d1ad4287fff86.jpg);
+  background-size: cover;
+  background-position: 30%;
+  grid-area: c;
+}
+
+.blue {
+  background-image: url(https://i.pinimg.com/564x/fe/ad/92/fead9232e51d950af9d413c1e8bfa766.jpg);
+  background-size: cover;
+  grid-area: b;
+}
+
+.green {
+  background-image: url(https://i.pinimg.com/736x/e6/0c/75/e60c756a36d41d08b40e82ebb284b205.jpg);
+  background-size: cover;
+  background-position: 20%;
+  grid-area: d;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px #4444;
+}
+
+.cards:hover > .card:not(:hover) {
+  /* filter: blur(4px); */
+  transform: scale(0.9, 0.9);
+}

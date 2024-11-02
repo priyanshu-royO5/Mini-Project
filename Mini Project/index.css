@@ -1,0 +1,76 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  padding: 1rem 0;
+}
+
+.nav span{
+  margin-left: 5rem;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+.logo{
+  height: 9vh;
+  width: 9vh;
+  background-image: url(https://i.pinimg.com/564x/e5/7d/c9/e57dc91eb1771c0ca85829fb385a86a9.jpg);
+  background-size: contain;
+  background-repeat: round;
+}
+
+.head-img{
+  background-image: url(https://i.pinimg.com/564x/75/7b/db/757bdbec0b126566ea80b48948ca9906.jpg);
+  /* background-image: url(https://i.pinimg.com/736x/b5/74/e7/b574e7202b2a78fccf590bc9f19031ed.jpg); */
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.check{
+  height: 7vh;
+  width: 12vw;
+  border-radius: 7px;
+  margin-bottom: 15vh;
+  margin-inline: auto;
+}
+
+.check:hover{
+  background-color: #212121;
+}
+
+/* Main CSS */
+main{
+  margin-block: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 95vw;
+  margin-inline: auto;
+}
+
+.main-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 45vw;
+}
+.head{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.sub-head{
+  font-size: 1.7rem;
+}
+.main-cards{
+  margin-left: 9rem;
+}
